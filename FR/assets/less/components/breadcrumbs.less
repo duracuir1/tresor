@@ -1,0 +1,22 @@
+/**
+ * Breadcrumbs
+ */
+
+
+@breadcrumb-bg: transparent;
+@breadcrumb-active-color: rgb(255, 255, 255);
+@breadcrumb-padding-horizontal: 0;
+
+
+.breadcrumb {
+	> li {
+		> a {
+			color: @brand-accent;
+			transition: color 0.3s;
+			text-decoration: none;
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+}
