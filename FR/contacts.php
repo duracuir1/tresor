@@ -1,3 +1,4 @@
+<?php include '../FR/sendemail.php'?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -123,14 +124,14 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <i class="icon ion-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="../FR/gallery-fullwidth.html">Galérie large taille</a></li>
-                            <li><a href="../FR/gallery-boxed.html">Galérie réduite</a></li>
+                            <li><a href="../FR/gallery-fullwidth.html">Notre Galérie</a></li>
+                            <!-- <li><a href="../FR/gallery-boxed.html">Galérie réduite</a></li>
                             <li><a href="../FR/blog.html">Blog</a></li>
-                            <li><a href="../FR/blog-item.html">Eléments du Blog</a></li>
+                            <li><a href="../FR/blog-item.html">Eléments du Blog</a></li> -->
                             <li><a href="../FR/404page.html">404 Page</a></li>
                         </ul>
                     </li>
-                    <li class="active"><a href="../FR/contacts.html">Contacts</a></li>
+                    <li class="active"><a href="../FR/contacts.php">Contacts</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -180,6 +181,9 @@
             <!-- / .row -->
             <div class="row">
                 <div class="col-sm-7">
+                    <!--alert messages start-->
+            <?php echo $alert; ?>
+    <!--alert messages end-->
                     <div class="section-contacts__form_body">
                         <p class="section-contacts__title">Prendre contact</p>
 
@@ -187,44 +191,41 @@
 
                         <!-- Alert message -->
                         <div class="alert" id="form_message" role="alert"></div>
+                        
+        <form class="contacts__form" action="" method="post">
 
-                        <!-- Form -->
-                        <form id="form_sendemail" class="contacts__form">
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name" class="sr-only">Nom</label>
+                <input type="text" name="name" class="form-control" placeholder="Entrez votre nom" required>
+                <span class="help-block"></span>
+            </div>
 
-                            <!-- Email -->
-                            <div class="form-group">
-                                <label for="email" class="sr-only">Addresse mail</label>
-                                <input type="email" name="email" class="form-control" id="email" placeholder="Entrez votre addresse mail">
-                                <span class="help-block"></span>
-                            </div>
+            <!-- Name -->
+            <div class="form-group">
+                <label for="email" class="sr-only">Addresse mail</label>
+                <input type="email" name="email" class="form-control" placeholder="Entrez votre addresse mail" required>
+                <span class="help-block"></span>
+            </div>
 
-                            <!-- Name -->
-                            <div class="form-group">
-                                <label for="name" class="sr-only">Nom</label>
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Entrez votre nom">
-                                <span class="help-block"></span>
-                            </div>
+            <!-- Message -->
+            <div class="form-group">
+                <label for="message" class="sr-only">Message</label>
+                <textarea name="message" class="form-control" id="message" rows="6" placeholder="Entrez votre message" required></textarea>
+                <span class="help-block"></span>
+            </div>
 
-                            <!-- Message -->
-                            <div class="form-group">
-                                <label for="message" class="sr-only">Message</label>
-                                <textarea name="message" class="form-control" id="message" rows="6" placeholder="Entrez votre message"></textarea>
-                                <span class="help-block"></span>
-                            </div>
-
-                            <!-- Note -->
-                            <div class="form-group">
+            <!-- Note -->
+            <div class="form-group">
                                 <small class="text-muted">
                     * Tous les champs sont obligatoires.
                   </small>
                             </div>
 
-                            <!-- Submit -->
-                            <button type="submit" class="btn btn-default">
-                  Envoyer le  Message
-                </button>
-
-                        </form>
+          <input type="submit" name="submit" class="btn btn-default" value="Envoyer le  Message">
+        </form>
+                        <!-- Form -->
+                        
                         <!-- .contacts__form -->
 
                     </div>
@@ -283,7 +284,7 @@
                     <div class="col-xs-12 col-sm-4 col-sm-push-4 col-md-6 col-md-push-3">
                         <div class="footer__item">
                             <h2 class="brand__logo">Trésor Hotel</h2>
-                            <p class="brand__sublogo">Grand</p>
+                            <p class="brand__sublogo"></p>
                             <ul class="social__icons">
                                 <li class="social-icons__item"><a href="#"><i class="icon ion-social-twitter" aria-hidden="true"></i></a></li>
                                 <li class="social-icons__item"><a href="#"><i class="icon ion-social-facebook" aria-hidden="true"></i></a></li>
@@ -359,8 +360,13 @@
     </footer>
     <!-- .section__footer -->
 
-    <!-- Scripts
-    ================================================== -->
+    <!-- Scripts -->
+    <script type="text/javascript">
+    if(window.history.replaceState){
+      window.history.replaceState(null, null, window.location.href);
+    }
+    </script>
+    ================================================== 
 
     <!-- JS Global -->
     <script src="../FR/assets/plugins/jquery/jquery-1.12.4.min.js"></script>
