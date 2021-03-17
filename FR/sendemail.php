@@ -32,7 +32,7 @@ if(isset($_POST['submit'])){
 
     $mail->send();
     $alert = '<div class="alert-success">
-                 <span>Message Sent! Thank you for contacting us.</span>
+                 <span>Message Envoyé! Merci de nous avoir contacté.</span>
                 </div>';
   } catch (Exception $e){
     $alert = '<div class="alert-error">

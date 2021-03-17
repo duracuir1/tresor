@@ -1,3 +1,4 @@
+<?php include '../EN/sendemail.php'?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,7 +55,7 @@
         <i class="icon ion-chevron-down"></i>
       </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="../index.html">FR</a></li>
+                            <li><a href="#">FR</a></li>
                             <!-- <li><a href="#">Es</a></li>
                     <li><a href="#">Ru</a></li> -->
                         </ul>
@@ -127,7 +128,7 @@
                             <li><a href="../EN/404page.html">404 Page</a></li>
                         </ul>
                     </li>
-                    <li><a href="../EN/contacts.html">Contacts</a></li>
+                    <li><a href="../EN/contacts.php">Contacts</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -178,6 +179,9 @@
             <!-- / .row -->
             <div class="row">
                 <div class="col-sm-7">
+                     <!--alert messages start-->
+            <?php echo $alert; ?>
+    <!--alert messages end-->
                     <div class="section-contacts__form_body">
                         <p class="section-contacts__title">Get in touch</p>
 
@@ -187,42 +191,39 @@
                         <div class="alert" id="form_message" role="alert"></div>
 
                         <!-- Form -->
-                        <form id="form_sendemail" class="contacts__form">
+                        <form class="contacts__form" action="" method="post">
 
-                            <!-- Email -->
-                            <div class="form-group">
-                                <label for="email" class="sr-only">Email address</label>
-                                <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email address">
-                                <span class="help-block"></span>
-                            </div>
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name" class="sr-only">Name</label>
+                <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+                <span class="help-block"></span>
+            </div>
 
-                            <!-- Name -->
-                            <div class="form-group">
-                                <label for="name" class="sr-only">Name</label>
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name">
-                                <span class="help-block"></span>
-                            </div>
+            <!-- Name -->
+            <div class="form-group">
+                <label for="email" class="sr-only">E-mail address</label>
+                <input type="email" name="email" class="form-control" placeholder="Enter your e-mail address" required>
+                <span class="help-block"></span>
+            </div>
 
-                            <!-- Message -->
-                            <div class="form-group">
-                                <label for="message" class="sr-only">Message</label>
-                                <textarea name="message" class="form-control" id="message" rows="6" placeholder="Enter your message"></textarea>
-                                <span class="help-block"></span>
-                            </div>
+            <!-- Message -->
+            <div class="form-group">
+                <label for="message" class="sr-only">Message</label>
+                <textarea name="message" class="form-control" id="message" rows="6" placeholder="Enter your message" required></textarea>
+                <span class="help-block"></span>
+            </div>
 
-                            <!-- Note -->
-                            <div class="form-group">
+            <!-- Note -->
+            <div class="form-group">
                                 <small class="text-muted">
                     * All fields are mandatory.
                   </small>
                             </div>
 
-                            <!-- Submit -->
-                            <button type="submit" class="btn btn-default">
-                  Send Message
-                </button>
-
-                        </form>
+          <input type="submit" name="submit" class="btn btn-default" value="Submit message">
+        </form>
+                        <!-- Form -->
                         <!-- .contacts__form -->
 
                     </div>

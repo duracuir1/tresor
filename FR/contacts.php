@@ -52,10 +52,10 @@
                     <div class="dropdown lang-menu">
                         <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 En
-                <i class="icon ion-chevron-down"><a href="../EN/contact.html"></a></i>
+                <i class="icon ion-chevron-down"></i>
               </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <!-- <li><a href="#">Fr</a></li> -->
+                            <li><a href="../EN/contacts.php">En</a></li>
                             <!-- <li><a href="#">Es</a></li> -->
                             <!-- <li><a href="#">Ru</a></li> -->
                         </ul>
