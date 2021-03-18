@@ -1,3 +1,4 @@
+<?php  include '../reservation/sendemail.php'  ?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -5,16 +6,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="../EN/assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
 
     <title>Reservation | Tresor Hotel</title>
 
     <!-- CSS Plugins -->
-    <link href="../EN/assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet" type="text/css">
 
     <!-- CSS Global -->
     <!--build:css assets/css/theme.min.css-->
-    <link rel="stylesheet" href="../EN/assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
     <!--endbuild-->
 
 </head>
@@ -65,7 +66,7 @@
 						    <i class="icon ion-chevron-down"></i>
 						  </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="../FR/reservation - twins.html">FR</a></li>
+                            <li><a href="../FR/reservation - sjr.html">FR</a></li>
                             <!-- <li><a href="#">Es</a></li>
                             <li><a href="#">Ru</a></li> -->
                         </ul>
@@ -90,7 +91,7 @@
 
     <!-- Info Section
         ================================================== -->
-    <?php include('./contact/_contact.php'); ?>
+
     <!-- .section__info -->
     <!-- Navbar
         ================================================== -->
@@ -121,32 +122,32 @@
             <div class="collapse navbar-collapse" id="navbar__collapse">
                 <ul class="nav navbar-nav navbar-left">
                     <li>
-                        <a href="../EN/index.html">Home</a>
+                        <a href="../index.html">Home</a>
 
                     </li>
-                    <li><a href="../EN/about.html">About us</a></li>
+                    <li><a href="../about.html">About us</a></li>
                     <li>
-                        <a href="../EN/rooms-1.html">Our rooms </a>
+                        <a href="../rooms-1.html">Our rooms </a>
                         <!-- <ul class="dropdown-menu">
-                                <li><a href="../EN/rooms-1.html">Chambres 1</a></li>
-                                <li><a href="../EN/rooms-2.html">Chambres 2</a></li>
-                                <li><a href="../EN/room-detail.html">Detail Chambres</a></li>
+                                <li><a href="../rooms-1.html">Chambres 1</a></li>
+                                <li><a href="../rooms-2.html">Chambres 2</a></li>
+                                <li><a href="../room-detail.html">Detail Chambres</a></li>
                             </ul> -->
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="../EN/reservation.html">Reservation</a></li>
+                    <li class="active"><a href="../reservation.html">Reservation</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <i class="icon ion-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="../EN/gallery-fullwidth.html">Our gallery</a></li>
-                            <!-- <li><a href="../EN/gallery-boxed.html">Galérie réduite</a></li>
-                                <li><a href="../EN/blog.html">Blog</a></li>
-                                <li><a href="../EN/blog-item.html">Eléménts du Blog</a></li> -->
-                            <li><a href="../EN/404page.html">404 Page</a></li>
+                            <li><a href="../gallery-fullwidth.html">Our gallery</a></li>
+                            <!-- <li><a href="../gallery-boxed.html">Galérie réduite</a></li>
+                                <li><a href="../blog.html">Blog</a></li>
+                                <li><a href="../blog-item.html">Eléménts du Blog</a></li> -->
+                            <li><a href="../404page.html">404 Page</a></li>
                         </ul>
                     </li>
-                    <li><a href="../EN/contacts.php">Contacts</a></li>
+                    <li><a href="../contacts.php">Contacts</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -168,7 +169,7 @@
 
                         <!-- Breadcrumbs -->
                         <ol class="breadcrumb">
-                            <li><a href="../EN/index.html">Home</a></li>
+                            <li><a href="../index.html">Home</a></li>
                             <li class="active">Reservation</li>
                         </ol>
 
@@ -193,17 +194,17 @@
                         <p class="subheading">Reservation details</p>
                         <h2 class="section__heading">Selected rooms</h2>
                         <figure class="room__details">
-                            <img src="../EN/assets/img/gallery_img1.jpg" class="img-responsive" alt="...">
+                            <img src="../assets/img/gallery_img1.jpg" class="img-responsive" alt="...">
                             <figcaption>
-                                <h3>Twins bed room</h3>
+                                <h3>Junior suite</h3>
                                 <div class="room__price">
-                                    €59 (35.000 FCFA) <small>/ night</small>
+                                    €83 (50.000 FCFA) <small>/ night</small>
                                 </div>
                                 <p class="room__desc"></p>
                             </figcaption>
                         </figure>
                         <!-- / .room__details -->
-                        <ul class="details-info">
+                        <!-- <ul class="details-info">
                             <li>
                                 <label>Check-in</label>
                                 <p>2017-04-09</p>
@@ -232,7 +233,7 @@
                                 <label>Total price</label>
                                 <p>€783 (508.000 FCFA)</p>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                     <!-- .booking__details-body -->
                     <div class="info__body">
@@ -275,10 +276,12 @@
 
                         <!-- Alert message -->
                         <div class="alert" id="form_reservation" role="alert"></div>
-
+                            <!--alert messages start-->
+                        <?php echo $alert; ?>
+                           <!--alert messages end-->
                         <!-- This is HTTML form only, PHP files are not included -->
 
-                        <form id="reservation-form_sendemail" class="reservation__form" data-animate-in="animateUp">
+                        <form class="reservation__form" data-animate-in="animateUp" action="" method="POST">
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <label for="check-in" class="sr-only">Arrival date</label>
@@ -387,6 +390,11 @@
                                     <span class="help-block"></span>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                    <input type="text" name="room-name" class="form-control" value="Junior suite" style="visibility:hidden" >
+                                    <span class="help-block"></span>
+                                </div>
+                            </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label for="requirements" class="sr-only">Special requirements</label>
@@ -398,7 +406,7 @@
                                 <p>
                                     <input type="checkbox" name="checkbox"> I have read and accepted <a href="#" class="conditions"> the terms and conditions.</a>
                                 </p>
-                                <button type="submit" class="btn btn-booking">Book by email</button>
+                                <input type="submit" name="submit" class="btn btn-booking" value="Book by email">
                             </div>
                         </form>
                         <!-- .reservation__form -->
@@ -495,7 +503,11 @@
         <!-- / .container -->
     </footer>
     <!-- .section__footer -->
-
+    <script type="text/javascript">
+    if(window.history.replaceState){
+      window.history.replaceState(null, null, window.location.href);
+    }
+    </script>
     <!-- 
     ================================================== -->
 
