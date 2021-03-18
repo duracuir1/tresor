@@ -1,3 +1,4 @@
+<?php  include '../reservation/sendemail.php'  ?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -5,16 +6,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="../FR/assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
 
     <title>Réservation | Trésor Hotel</title>
 
     <!-- CSS Plugins -->
-    <link href="../FR/assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet" type="text/css">
 
     <!-- CSS Global -->
     <!--build:css assets/css/theme.min.css-->
-    <link rel="stylesheet" href="../FR/assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
     <!--endbuild-->
 
 </head>
@@ -23,7 +24,6 @@
 
     <!-- Info Section
     ================================================== -->
-    <?php include('./contact/_contact.php'); ?>
     <!-- .section__info -->
     <!-- Navbar
     ================================================== -->
@@ -68,7 +68,7 @@
                     <!-- .social__icons -->
                     <div class="dropdown lang-menu">
                         <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						    EN 
+						    EN
 						    <i class="icon ion-chevron-down"></i>
 						  </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -110,7 +110,7 @@
           </button>
 
                 <!-- Logo -->
-                <a class="navbar-brand" href="../index.html">
+                <a class="navbar-brand" href="./index.html">
                     <h3 class="navbar-brand__logo">Trésor Hotel</h3>
 
                 </a>
@@ -122,32 +122,32 @@
             <div class="collapse navbar-collapse" id="navbar__collapse">
                 <ul class="nav navbar-nav navbar-left">
                     <li>
-                        <a href="../index.html">Accueil</a>
+                        <a href="../../index.html">Accueil</a>
 
                     </li>
-                    <li><a href="../FR/about.html">A propos</a></li>
+                    <li><a href="../about.html">A propos</a></li>
                     <li>
-                        <a href="../FR/rooms-1.html">Nos Chambres</a>
+                        <a href="../rooms-1.html">Nos Chambres </a>
                         <!-- <ul class="dropdown-menu">
-                            <li><a href="../FR/rooms-1.html">Chambres 1</a></li>
-                            <li><a href="../FR/rooms-2.html">Chambres 2</a></li>
-                            <li><a href="../FR/room-detail.html">Detail Chambres</a></li>
+                            <li><a href="../rooms-1.html">Chambres 1</a></li>
+                            <li><a href="../rooms-2.html">Chambres 2</a></li>
+                            <li><a href="../room-detail.html">Detail Chambres</a></li>
                         </ul> -->
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="../FR/reservation.html">Réservation</a></li>
+                    <li class="active"><a href="../reservation.html">Réservation</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <i class="icon ion-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="../FR/gallery-fullwidth.html">Notre Galérie</a></li>
-                            <!-- <li><a href="../FR/gallery-boxed.html">Galérie réduite</a></li>
-                            <li><a href="../FR/blog.html">Blog</a></li>
-                            <li><a href="../FR/blog-item.html">Eléménts du Blog</a></li> -->
-                            <li><a href="../FR/404page.html">404 Page</a></li>
+                            <li><a href="../gallery-fullwidth.html">Notre Galérie</a></li>
+                            <!-- <li><a href="../gallery-boxed.html">Galérie réduite</a></li>
+                            <li><a href="../blog.html">Blog</a></li>
+                            <li><a href="../blog-item.html">Eléménts du Blog</a></li> -->
+                            <li><a href="../404page.html">404 Page</a></li>
                         </ul>
                     </li>
-                    <li><a href="../FR/contacts.php">Contacts</a></li>
+                    <li><a href="../contacts.php">Contacts</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -169,7 +169,7 @@
 
                         <!-- Breadcrumbs -->
                         <ol class="breadcrumb">
-                            <li><a href="../index.html">Accueil</a></li>
+                            <li><a href="../../index.html">Accueil</a></li>
                             <li class="active">Réservation</li>
                         </ol>
 
@@ -194,17 +194,17 @@
                         <p class="subheading">Détails réservation</p>
                         <h2 class="section__heading">Chambres selectionnées</h2>
                         <figure class="room__details">
-                            <img src="../FR/assets/img/gallery_img1.jpg" class="img-responsive" alt="...">
+                            <img src="../assets/img/gallery_img1.jpg" class="img-responsive" alt="...">
                             <figcaption>
-                                <h3>Suite junior</h3>
+                                <h3>Chambre haut standing</h3>
                                 <div class="room__price">
-                                    €83 (50.000 FCFA) <small>/ nuitée</small>
+                                    €50 (30.000 FCFA) <small>/ nuitée</small>
                                 </div>
                                 <p class="room__desc"></p>
                             </figcaption>
                         </figure>
                         <!-- / .room__details -->
-                        <ul class="details-info">
+                        <!-- <ul class="details-info">
                             <li>
                                 <label>Enregistrement</label>
                                 <p>2017-04-09</p>
@@ -233,7 +233,7 @@
                                 <label>Prix total</label>
                                 <p>€783 (508.000 FCFA)</p>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                     <!-- .booking__details-body -->
                     <div class="info__body">
@@ -276,21 +276,23 @@
 
                         <!-- Alert message -->
                         <div class="alert" id="form_reservation" role="alert"></div>
-
+                        <!--alert messages start-->
+                        <?php echo $alert; ?>
+                           <!--alert messages end-->
                         <!-- This is HTTML form only, PHP files are not included -->
 
-                        <form id="reservation-form_sendemail" class="reservation__form" data-animate-in="animateUp">
+                        <form  class="reservation__form" data-animate-in="animateUp"  action="" method="post">
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <label for="check-in" class="sr-only">Date arrivée</label>
-                                    <input type="date" name="check-in" class="form-control" id="check-in" value="2017-04-09">
+                                    <input type="date" name="check-in" class="form-control" id="check-in" value=<?php echo date('Y-m-d');?>>
                                     <span class="help-block"></span>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <label for="check-out" class="sr-only">Date départ</label>
-                                    <input type="date" name="check-out" class="form-control" id="check-out" value="2017-04-18">
+                                    <input type="date" name="check-out" class="form-control" id="check-out" value=<?php echo date('Y-m-d');?>>
                                     <span class="help-block"></span>
                                 </div>
                             </div>
@@ -388,6 +390,12 @@
                                     <span class="help-block"></span>
                                 </div>
                             </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="room-name" class="form-control" value="Chambre haut standing" style="visibility:hidden" >
+                                    <span class="help-block"></span>
+                                </div>
+                            </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label for="requirements" class="sr-only">Exigences spéciales</label>
@@ -399,7 +407,7 @@
                                 <p>
                                     <input type="checkbox" name="checkbox"> J'ai lu et accepté <a href="#" class="conditions">les termes et conditions.</a>
                                 </p>
-                                <button type="submit" class="btn btn-booking">Réservez par mail</button>
+                                <input type="submit" name="submit" class="btn btn-booking" value="Réservez par mail">
                             </div>
                         </form>
                         <!-- .reservation__form -->
@@ -496,23 +504,27 @@
         <!-- / .container -->
     </footer>
     <!-- .section__footer -->
-
+    <script type="text/javascript">
+    if(window.history.replaceState){
+      window.history.replaceState(null, null, window.location.href);
+    }
+    </script>
     <!-- 
     ================================================== -->
 
     <!-- JS Global -->
-    <script src="../FR/assets/plugins/jquery/jquery-1.12.4.min.js"></script>
-    <script src="../FR/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/plugins/jquery/jquery-1.12.4.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- JS Plugins -->
-    <script src="../FR/assets/plugins/waypoints/lib/jquery.waypoints.min.js"></script>
-    <script src="../FR/assets/plugins/lightbox/dist/js/lightbox.min.js"></script>
-    <script src="../FR/assets/plugins/isotope/isotope.pkgd.min.js"></script>
-    <script src="../FR/assets/plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets/plugins/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="../assets/plugins/lightbox/dist/js/lightbox.min.js"></script>
+    <script src="../assets/plugins/isotope/isotope.pkgd.min.js"></script>
+    <script src="../assets/plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
 
     <!-- JS Custom -->
     <!--build:js assets/js/theme.min.js -->
-    <script src="../FR/assets/js/theme.js"></script>
+    <script src="../assets/js/theme.js"></script>
     <!-- endbuild -->
 
 </body>
