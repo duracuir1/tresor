@@ -398,7 +398,7 @@
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label for="requirements" class="sr-only">Special requirements</label>
-                                    <textarea name="requirements" class="form-control" rows="8" id="requirements" placeholder="Exigences spéciales"></textarea>
+                                    <textarea name="requirements" class="form-control" rows="8" id="requirements" placeholder="Special requirements"></textarea>
                                     <span class="help-block"></span>
                                 </div>
                             </div>

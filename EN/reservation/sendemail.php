@@ -41,16 +41,16 @@ if(isset($_POST['submit'])){
 
     $mail->isHTML(true);
     $mail->Subject = 'Message Received (Reservation Page)';
-    $mail->Body = "<h3>Chambre : $room <br> Debut : $checkin <br>Fin: $checkout <br>Adulte : $adult <br>
-    Enfants : $child <br>Prenom: $fname <br>Nom : $lname <br>
-    Email : $email <br>Telephone: $phone <br>Adresse 1 : $address1 <br>
-    Adresse 2 : $address2 <br>Region: $state <br>Ville : $city <br>
-    Pays : $country <br>Code postal: $zipcode <br>Exigences : $requirements
+    $mail->Body = "<h3>Room : $room <br> Check-in : $checkin <br>Check-out: $checkout <br>Adult : $adult <br>
+    Children : $child <br>First-name: $fname <br>Name : $lname <br>
+    Email : $email <br>Phone: $phone <br>Address line 1 : $address1 <br>
+    Address line 2 : $address2 <br>Region: $state <br>Ville : $city <br>
+    Country: $country <br>Zip code: $zipcode <br>Requirements : $requirements
     </h3>";
 
     $mail->send();
     $alert = '<div class="alert-success">
-                 <span>Message Envoyé! Merci de nous avoir contacté.</span>
+                 <span>Message sent! Thnak you for contacting us.</span>
                 </div>';
   } catch (Exception $e){
     $alert = '<div class="alert-error">

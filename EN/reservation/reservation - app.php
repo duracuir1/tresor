@@ -135,7 +135,7 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="../reservation.html">Reservation</a></li>
+                    <li class="active"><a href="../rooms-1.html">Reservation</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <i class="icon ion-chevron-down"></i></a>
                         <ul class="dropdown-menu">
