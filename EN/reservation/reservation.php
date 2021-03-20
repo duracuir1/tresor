@@ -62,11 +62,11 @@
                     <!-- .social__icons -->
                     <div class="dropdown lang-menu">
                         <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						    FR
+						    Fr
 						    <i class="icon ion-chevron-down"></i>
 						  </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="../FR/reservation.html">FR</a></li>
+                            <li><a href="../../FR/reservation/reservation.php">Fr</a></li>
                             <!-- <li><a href="#">Es</a></li>
                             <li><a href="#">Ru</a></li> -->
                         </ul>

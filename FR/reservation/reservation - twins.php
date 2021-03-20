@@ -74,7 +74,7 @@
 						    <i class="icon ion-chevron-down"></i>
 						  </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="../EN/reservation - app.html">EN</a></li>
+                            <li><a href="../../EN/reservation/reservation - twins.php">EN</a></li>
                             <!-- <li><a href="#">Es</a></li>
                             <li><a href="#">Ru</a></li> -->
                         </ul>
