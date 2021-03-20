@@ -324,28 +324,42 @@
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <label for="first-name" class="sr-only">Prénom</label>
-                                    <input type="text" name="first-name" class="form-control" id="first-name" placeholder="First Name">
+                                    <input type="text" name="first-name" class="form-control" id="first-name" placeholder="First Name" required>
                                     <span class="help-block"></span>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <label for="last-name" class="sr-only">Nom</label>
-                                    <input type="text" name="last-name" class="form-control" id="last-name" placeholder="Last Name">
+                                    <input type="text" name="last-name" class="form-control" id="last-name" placeholder="Last Name" required>
                                     <span class="help-block"></span>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <label for="email" class="sr-only">Email</label>
-                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
                                     <span class="help-block"></span>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <label for="phone" class="sr-only">Téléphone</label>
-                                    <input type="tel" name="phone" class="form-control" id="phone" placeholder="Téléphone">
+                                    <input type="tel" name="phone" class="form-control" id="phone" placeholder="Téléphone" required>
+                                    <span class="help-block"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="address-line1" class="sr-only">N° carte bancaire</label>
+                                    <input type="text" name="bank-card" class="form-control" id="bank-card" placeholder="Numero carte bancaire" pattern="[0-9]{4}[\t][0-9]{4}[\t][0-9]{4}[\t][0-9]{4}[\t]" required>
+                                    <span class="help-block"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="address-line1" class="sr-only">code de securité</label>
+                                    <input type="text" name="sec-code" class="form-control" id="bank-card" placeholder="code de securité" pattern="[0-9]{3}" required>
                                     <span class="help-block"></span>
                                 </div>
                             </div>
