@@ -1,4 +1,4 @@
-<?php  include '../reservation/sendemail.php'  ?>
+<?php include '../reservation/sendemail.php'  ?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -24,7 +24,7 @@
 
     <!-- Info Section
     ================================================== -->
-   
+
     <!-- .section__info -->
     <!-- Navbar
     ================================================== -->
@@ -69,9 +69,9 @@
                     <!-- .social__icons -->
                     <div class="dropdown lang-menu">
                         <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						    EN
-						    <i class="icon ion-chevron-down"></i>
-						  </button>
+                            EN
+                            <i class="icon ion-chevron-down"></i>
+                        </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                             <li><a href="../../EN/reservation/reservation.php">EN</a></li>
                             <!-- <li><a href="#">Es</a></li>
@@ -104,11 +104,11 @@
 
                 <!-- Collapse toggle -->
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar__collapse" aria-expanded="false">
-            <span class="sr-only">Menu</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+                    <span class="sr-only">Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
                 <!-- Logo -->
                 <a class="navbar-brand" href="../../index.html">
@@ -277,23 +277,23 @@
 
                         <!-- Alert message -->
                         <div class="alert" id="form_reservation" role="alert"></div>
-                             <!--alert messages start-->
-                                <?php echo $alert; ?>
-                           <!--alert messages end-->
+                        <!--alert messages start-->
+                        <?php echo $alert; ?>
+                        <!--alert messages end-->
                         <!-- This is HTTML form only, PHP files are not included -->
 
-                        <form  class="reservation__form" data-animate-in="animateUp" action="" method="post">
+                        <form class="reservation__form" data-animate-in="animateUp" action="" method="post">
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <label for="check-in" class="sr-only">Date arrivée</label>
-                                    <input type="date" name="check-in" class="form-control" id="check-in" value=<?php echo date('Y-m-d');?>>
+                                    <input type="date" name="check-in" class="form-control" id="check-in" value=<?php echo date('Y-m-d'); ?>>
                                     <span class="help-block"></span>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <label for="check-out" class="sr-only">Date départ</label>
-                                    <input type="date" name="check-out" class="form-control" id="check-out" value=<?php echo date('Y-m-d');?>>
+                                    <input type="date" name="check-out" class="form-control" id="check-out" value=<?php echo date('Y-m-d'); ?>>
                                     <span class="help-block"></span>
                                 </div>
                             </div>
@@ -301,11 +301,11 @@
                                 <div class="form-group">
                                     <label for="form-adults" class="sr-only">Adultes</label>
                                     <select class="form-control" name="form-adults" id="form-adults">
-                      <option value="1" selected="">Adultes</option>
-                      <option value="2">1 Adulte</option>
-                      <option value="3">2 Adultes</option>
-                      <option value="4">3 Adultes</option>
-                  	</select>
+                                        <option value="1" selected="">Adultes</option>
+                                        <option value="2">1 Adulte</option>
+                                        <option value="3">2 Adultes</option>
+                                        <option value="4">3 Adultes</option>
+                                    </select>
                                     <span class="help-block"></span>
                                 </div>
                             </div>
@@ -313,11 +313,11 @@
                                 <div class="form-group">
                                     <label for="form-children" class="sr-only">Enfants</label>
                                     <select class="form-control" name="form-children" id="form-children">
-                      <option value="1" selected="">Enfants</option>
-                      <option value="2">1 Enfant</option>
-                      <option value="3">2 Enfants</option>
-                      <option value="4">3 Enfants</option>
-                  	</select>
+                                        <option value="1" selected="">Enfants</option>
+                                        <option value="2">1 Enfant</option>
+                                        <option value="3">2 Enfants</option>
+                                        <option value="4">3 Enfants</option>
+                                    </select>
                                     <span class="help-block"></span>
                                 </div>
                             </div>
@@ -407,7 +407,7 @@
                             </div>
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="room-name" class="form-control" value="Chambre standard" style="visibility:hidden" >
+                                    <input type="text" name="room-name" class="form-control" value="Chambre standard" style="visibility:hidden">
                                     <span class="help-block"></span>
                                 </div>
                             </div>
@@ -422,7 +422,7 @@
                                 <p>
                                     <input type="checkbox" name="checkbox"> J'ai lu et accepté <a href="#" class="conditions">les termes et conditions.</a>
                                 </p>
-                                <input type="submit" name="submit" class="btn btn-booking" value="Réservez par mail">
+                                <input type="submit" name="submit" class="btn btn-booking" value="Réservez maintenant">
                                 <!-- <button type="submit" class="btn btn-booking">Réservez par mail</button> -->
                             </div>
                         </form>
@@ -490,8 +490,8 @@
                                         </div>
                                         <div class="clear">
                                             <button type="submit" class="btn btn-default btn-newsletter" id="mc-embedded-subscribe">
-                          <i class="icon ion-paper-airplane"></i>
-                        </button>
+                                                <i class="icon ion-paper-airplane"></i>
+                                            </button>
                                         </div>
                                     </div>
                                 </form>
@@ -522,9 +522,9 @@
     <!-- .section__footer -->
     <!-- Scripts -->
     <script type="text/javascript">
-    if(window.history.replaceState){
-      window.history.replaceState(null, null, window.location.href);
-    }
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
     </script>
     =========
     <!-- 

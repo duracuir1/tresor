@@ -1,4 +1,4 @@
-<?php  include '../reservation/sendemail.php'  ?>
+<?php include '../reservation/sendemail.php'  ?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -62,9 +62,9 @@
                     <!-- .social__icons -->
                     <div class="dropdown lang-menu">
                         <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						    FR
-						    <i class="icon ion-chevron-down"></i>
-						  </button>
+                            FR
+                            <i class="icon ion-chevron-down"></i>
+                        </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                             <li><a href="../../FR/reservation/reservation - conf.php">FR</a></li>
                             <!-- <li><a href="#">Es</a></li>
@@ -91,7 +91,7 @@
 
     <!-- Info Section
         ================================================== -->
-   
+
     <!-- .section__info -->
     <!-- Navbar
         ================================================== -->
@@ -103,11 +103,11 @@
 
                 <!-- Collapse toggle -->
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar__collapse" aria-expanded="false">
-                <span class="sr-only">Menu</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+                    <span class="sr-only">Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
                 <!-- Logo -->
                 <a class="navbar-brand" href="../index.html">
@@ -276,12 +276,12 @@
 
                         <!-- Alert message -->
                         <div class="alert" id="form_reservation" role="alert"></div>
-                         <!--alert messages start-->
-                         <?php echo $alert; ?>
-                           <!--alert messages end-->
+                        <!--alert messages start-->
+                        <?php echo $alert; ?>
+                        <!--alert messages end-->
                         <!-- This is HTTML form only, PHP files are not included -->
 
-                        <form class="reservation__form" data-animate-in="animateUp" action=""  method="post">
+                        <form class="reservation__form" data-animate-in="animateUp" action="" method="post">
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <label for="check-in" class="sr-only">Arrival date</label>
@@ -300,11 +300,11 @@
                                 <div class="form-group">
                                     <label for="form-adults" class="sr-only">Adults</label>
                                     <select class="form-control" name="form-adults" id="form-adults">
-                      <option value="1" selected="">Adults</option>
-                      <option value="2">1 Adult</option>
-                      <option value="3">2 Adults</option>
-                      <option value="4">3 Adults</option>
-                  	</select>
+                                        <option value="1" selected="">Adults</option>
+                                        <option value="2">1 Adult</option>
+                                        <option value="3">2 Adults</option>
+                                        <option value="4">3 Adults</option>
+                                    </select>
                                     <span class="help-block"></span>
                                 </div>
                             </div>
@@ -312,11 +312,11 @@
                                 <div class="form-group">
                                     <label for="form-children" class="sr-only">Children</label>
                                     <select class="form-control" name="form-children" id="form-children">
-                      <option value="1" selected="">Children</option>
-                      <option value="2">1 Child</option>
-                      <option value="3">2 Children</option>
-                      <option value="4">3 Children</option>
-                  	</select>
+                                        <option value="1" selected="">Children</option>
+                                        <option value="2">1 Child</option>
+                                        <option value="3">2 Children</option>
+                                        <option value="4">3 Children</option>
+                                    </select>
                                     <span class="help-block"></span>
                                 </div>
                             </div>
@@ -406,7 +406,7 @@
                             </div>
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="room-name" class="form-control" value="Comfort room" style="visibility:hidden" >
+                                    <input type="text" name="room-name" class="form-control" value="Comfort room" style="visibility:hidden">
                                     <span class="help-block"></span>
                                 </div>
                             </div>
@@ -421,7 +421,7 @@
                                 <p>
                                     <input type="checkbox" name="checkbox"> I have read and accepted <a href="#" class="conditions"> the terms and conditions.</a>
                                 </p>
-                                <input type="submit" name="submit" class="btn btn-booking" value="Book by email">
+                                <input type="submit" name="submit" class="btn btn-booking" value="Book now">
                             </div>
                         </form>
                         <!-- .reservation__form -->
@@ -488,8 +488,8 @@
                                         </div>
                                         <div class="clear">
                                             <button type="submit" class="btn btn-default btn-newsletter" id="mc-embedded-subscribe">
-		                      <i class="icon ion-paper-airplane"></i>
-		                    </button>
+                                                <i class="icon ion-paper-airplane"></i>
+                                            </button>
                                         </div>
                                     </div>
                                 </form>
@@ -519,9 +519,9 @@
     </footer>
     <!-- .section__footer -->
     <script type="text/javascript">
-    if(window.history.replaceState){
-      window.history.replaceState(null, null, window.location.href);
-    }
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
     </script>
     <!-- 
     ================================================== -->
