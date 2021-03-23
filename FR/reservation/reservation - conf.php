@@ -285,14 +285,14 @@
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <label for="check-in" class="sr-only">Date arrivée</label>
-                                    <input type="date" name="check-in" class="form-control" id="check-in" value=<?php echo date('Y-m-d'); ?>>
+                                    <input type="date" name="check-in" class="form-control" id="check-in" value=<?php echo date('Y-m-d'); ?> required>
                                     <span class="help-block"></span>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <label for="check-out" class="sr-only">Date départ</label>
-                                    <input type="date" name="check-out" class="form-control" id="check-out" value=<?php echo date('Y-m-d'); ?>>
+                                    <input type="date" name="check-out" class="form-control" id="check-out" value=<?php echo date('Y-m-d'); ?> required>
                                     <span class="help-block"></span>
                                 </div>
                             </div>
@@ -323,28 +323,28 @@
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <label for="first-name" class="sr-only">Prénom</label>
-                                    <input type="text" name="first-name" class="form-control" id="first-name" placeholder="First Name">
+                                    <input type="text" name="first-name" class="form-control" id="first-name" placeholder="First Name" required>
                                     <span class="help-block"></span>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <label for="last-name" class="sr-only">Nom</label>
-                                    <input type="text" name="last-name" class="form-control" id="last-name" placeholder="Last Name">
+                                    <input type="text" name="last-name" class="form-control" id="last-name" placeholder="Last Name" required>
                                     <span class="help-block"></span>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <label for="email" class="sr-only">Email</label>
-                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
                                     <span class="help-block"></span>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <label for="phone" class="sr-only">Téléphone</label>
-                                    <input type="tel" name="phone" class="form-control" id="phone" placeholder="Téléphone">
+                                    <input type="tel" name="phone" class="form-control" id="phone" placeholder="Téléphone" required>
                                     <span class="help-block"></span>
                                 </div>
                             </div>
@@ -386,21 +386,21 @@
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <label for="city" class="sr-only">Ville</label>
-                                    <input type="text" name="city" class="form-control" id="city" placeholder="Ville">
+                                    <input type="text" name="city" class="form-control" id="city" placeholder="Ville" required>
                                     <span class="help-block"></span>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <label for="country" class="sr-only">Pays</label>
-                                    <input type="text" name="country" class="form-control" id="country" placeholder="Pays">
+                                    <input type="text" name="country" class="form-control" id="country" placeholder="Pays" required>
                                     <span class="help-block"></span>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <label for="zip-code" class="sr-only">Code postal</label>
-                                    <input type="text" name="zip-code" class="form-control" id="zip-code" placeholder="Code postal">
+                                    <input type="text" name="zip-code" class="form-control" id="zip-code" placeholder="Code postal" required>
                                     <span class="help-block"></span>
                                 </div>
                             </div>
