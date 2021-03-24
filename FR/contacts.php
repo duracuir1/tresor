@@ -1,4 +1,4 @@
-<?php include '../FR/sendemail.php'?>
+<?php include '../FR/sendemail.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="../FR/assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="../FR/assets/ico/favicon.png">
 
     <title>Contacts | Trésor Hotel</title>
 
@@ -51,9 +51,9 @@
                     <!-- .social__icons -->
                     <div class="dropdown lang-menu">
                         <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                En
-                <i class="icon ion-chevron-down"></i>
-              </button>
+                            En
+                            <i class="icon ion-chevron-down"></i>
+                        </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                             <li><a href="../EN/contacts.php">En</a></li>
                             <!-- <li><a href="#">Es</a></li> -->
@@ -88,11 +88,11 @@
 
                 <!-- Collapse toggle -->
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar__collapse" aria-expanded="false">
-            <span class="sr-only">Menu</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+                    <span class="sr-only">Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
                 <!-- Logo -->
                 <a class="navbar-brand" href="../index.html">
@@ -158,7 +158,7 @@
                             <li class="active">Contact</li>
                         </ol>
 
-                        <p class="welcome_content__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="welcome_content__desc">Laisser nous un message nous ferions le reste.</p>
                     </div>
                     <!-- .welcome__content -->
                 </div>
@@ -182,8 +182,8 @@
             <div class="row">
                 <div class="col-sm-7">
                     <!--alert messages start-->
-            <?php echo $alert; ?>
-    <!--alert messages end-->
+                    <?php echo $alert; ?>
+                    <!--alert messages end-->
                     <div class="section-contacts__form_body">
                         <p class="section-contacts__title">Prendre contact</p>
 
@@ -191,41 +191,41 @@
 
                         <!-- Alert message -->
                         <div class="alert" id="form_message" role="alert"></div>
-                        
-        <form class="contacts__form" action="" method="post">
 
-            <!-- Name -->
-            <div class="form-group">
-                <label for="name" class="sr-only">Nom</label>
-                <input type="text" name="name" class="form-control" placeholder="Entrez votre nom" required>
-                <span class="help-block"></span>
-            </div>
+                        <form class="contacts__form" action="" method="post">
 
-            <!-- Name -->
-            <div class="form-group">
-                <label for="email" class="sr-only">Addresse mail</label>
-                <input type="email" name="email" class="form-control" placeholder="Entrez votre addresse mail" required>
-                <span class="help-block"></span>
-            </div>
-
-            <!-- Message -->
-            <div class="form-group">
-                <label for="message" class="sr-only">Message</label>
-                <textarea name="message" class="form-control" id="message" rows="6" placeholder="Entrez votre message" required></textarea>
-                <span class="help-block"></span>
-            </div>
-
-            <!-- Note -->
-            <div class="form-group">
-                                <small class="text-muted">
-                    * Tous les champs sont obligatoires.
-                  </small>
+                            <!-- Name -->
+                            <div class="form-group">
+                                <label for="name" class="sr-only">Nom</label>
+                                <input type="text" name="name" class="form-control" placeholder="Entrez votre nom" required>
+                                <span class="help-block"></span>
                             </div>
 
-          <input type="submit" name="submit" class="btn btn-default" value="Envoyer le  Message">
-        </form>
+                            <!-- Name -->
+                            <div class="form-group">
+                                <label for="email" class="sr-only">Addresse mail</label>
+                                <input type="email" name="email" class="form-control" placeholder="Entrez votre addresse mail" required>
+                                <span class="help-block"></span>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="form-group">
+                                <label for="message" class="sr-only">Message</label>
+                                <textarea name="message" class="form-control" id="message" rows="6" placeholder="Entrez votre message" required></textarea>
+                                <span class="help-block"></span>
+                            </div>
+
+                            <!-- Note -->
+                            <div class="form-group">
+                                <small class="text-muted">
+                                    * Tous les champs sont obligatoires.
+                                </small>
+                            </div>
+
+                            <input type="submit" name="submit" class="btn btn-default" value="Envoyer le  Message">
+                        </form>
                         <!-- Form -->
-                        
+
                         <!-- .contacts__form -->
 
                     </div>
@@ -236,7 +236,7 @@
                         <p class="contacts_info__title">Information</p>
                         <ul class="contacts_info__content">
                             <li>
-                                <p class="contact-info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit eveniet repellat possimus.</p>
+                                <p class="contact-info-text">Si vous avez une question n'hésitez pas de nous contacter.</p>
                             </li>
                             <li>
                                 <i class="icon ion-android-pin"></i>
@@ -269,8 +269,7 @@
         </div>
         <!-- / .container -->
         <div class="section_row">
-            <div id="map1"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3979.8575086756996!2d9.7520961!3d4.049476!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10610d08d96ac0b5%3A0xaeb2cc3ffb7c49d!2sTr%C3%A9sor%20Hotel!5e0!3m2!1sfr!2scm!4v1614525060785!5m2!1sfr!2scm"
-                    width="1500" height="370" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+            <div id="map1"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3979.8575086756996!2d9.7520961!3d4.049476!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10610d08d96ac0b5%3A0xaeb2cc3ffb7c49d!2sTr%C3%A9sor%20Hotel!5e0!3m2!1sfr!2scm!4v1614525060785!5m2!1sfr!2scm" width="1500" height="370" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
         </div>
         <!-- / .section_row -->
     </section>
@@ -329,8 +328,8 @@
                                         </div>
                                         <div class="clear">
                                             <button type="submit" class="btn btn-default btn-newsletter" id="mc-embedded-subscribe">
-                          <i class="icon ion-paper-airplane"></i>
-                        </button>
+                                                <i class="icon ion-paper-airplane"></i>
+                                            </button>
                                         </div>
                                     </div>
                                 </form>
@@ -362,11 +361,11 @@
 
     <!-- Scripts -->
     <script type="text/javascript">
-    if(window.history.replaceState){
-      window.history.replaceState(null, null, window.location.href);
-    }
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
     </script>
-    ================================================== 
+    ==================================================
 
     <!-- JS Global -->
     <script src="../FR/assets/plugins/jquery/jquery-1.12.4.min.js"></script>
